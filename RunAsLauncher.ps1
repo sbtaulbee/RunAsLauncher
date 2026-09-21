@@ -5,8 +5,8 @@
 
 .DESCRIPTION
     RunAsLauncher provides a Windows Forms interface for launching EXE
-    and MSC applications using alternate credentials or standard UAC
-    elevation.
+    and MSC applications using alternate domain or local credentials,
+    or standard Windows UAC elevation.
 
 .VERSION
     1.0.0
@@ -17,7 +17,12 @@
 
 .NOTES
     Credentials are not stored by this script.
-    The Domain/Local selector applies to "Run as Different User".
+
+    The Domain/Local account selector applies only to
+    "Run as Different User".
+
+    "Run Elevated" uses the current Windows user's security context
+    and the standard Windows UAC elevation mechanism.
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
