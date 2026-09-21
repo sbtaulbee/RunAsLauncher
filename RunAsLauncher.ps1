@@ -1,31 +1,23 @@
 <#
 .SYNOPSIS
     Graphical launcher for running Windows applications using alternate
-    credentials or elevated privileges.
+    credentials or UAC elevation.
 
 .DESCRIPTION
-    RunAsLauncher provides a Windows Forms interface for selecting and
-    launching EXE and MSC applications.
-
-    Applications can be launched using alternate domain/local credentials
-    or elevated using the standard Windows UAC mechanism.
-
-    Credentials are not stored by the script.
-
-.NOTES
-    Requires Windows PowerShell 5.1 and Windows Forms.
-
-    Run as Different User:
-        Uses Get-Credential and Start-Process -Credential.
-
-    Run Elevated:
-        Uses Start-Process -Verb RunAs and the current user's Windows
-        security context.
-
-    The Domain/Local selector applies to Run as Different User only.
+    RunAsLauncher provides a Windows Forms interface for launching EXE
+    and MSC applications using alternate credentials or standard UAC
+    elevation.
 
 .VERSION
     1.0.0
+
+.REQUIREMENTS
+    Windows PowerShell 5.1
+    Windows 10 or Windows 11
+
+.NOTES
+    Credentials are not stored by this script.
+    The Domain/Local selector applies to "Run as Different User".
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
