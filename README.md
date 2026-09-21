@@ -3,6 +3,10 @@
 A lightweight PowerShell GUI for launching Windows applications
 using alternate credentials or UAC elevation.
 
+## Screenshot
+
+![RunAsLauncher interface](screenshots/RunAsLauncher.png)
+
 ## Features
 
 - Run applications using alternate credentials
