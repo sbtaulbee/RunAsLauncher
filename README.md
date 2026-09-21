@@ -9,13 +9,19 @@ using alternate credentials or UAC elevation.
 
 ## Features
 
-- Run applications using alternate credentials
-- Domain and local account selection
-- UAC elevation
-- EXE and MSC support
-- Microsoft Management Console support
-- Windows Forms GUI
-- Credentials are not stored
+- Launch Windows applications using alternate credentials
+- Switch between domain and local account credential modes
+- Run applications with standard Windows UAC elevation
+- Browse for applications through a graphical file picker
+- Support for Windows executable (`.exe`) files
+- Support for Microsoft Management Console (`.msc`) snap-ins
+- Automatically launches MSC files through Microsoft Management Console
+- Simple Windows Forms graphical interface
+- Validates selected applications before attempting to launch them
+- Provides user-friendly error messages when an application cannot be launched
+- Uses the native Windows credential prompt through `Get-Credential`
+- Does not store usernames, passwords, or credentials
+- Designed for Windows PowerShell 5.1
 
 ## Requirements
 
