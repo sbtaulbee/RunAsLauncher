@@ -1,0 +1,24 @@
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Log files
+*.log
+
+# PowerShell / build output
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+
+# Compiled executables
+*.exe
